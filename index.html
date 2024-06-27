@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <img src="./assets/Vector.png" alt="Imagen de Alura">
     </header>
-    <main>
-        <section>
-            <div>
+    <main class="contenido">
+        <section class="contenido__cuerpo">
+            <div class="Caja_texto_ingresado">
                 <textarea id="textoIngresadoEnCaja" placeholder="Ingrese un texto aquí"></textarea>
+                <p>Ingrese solo letras en minúscula y sin acento</p>
+                <button onclick="cajaDeResultadosEncriptado();">Encriptar</button>
+                <button onclick="cajaDeResultadosDesencriptado();">Desencriptar</button>
             </div>
-            <div>
+            <div class="caja_resultados">
                 <img src="./assets/Muñeco.png" id="imagenSinTexto">
                 <h2 id="mensajeNoEncontrado">Ningún mensaje fue encontrado</h2>
                 <p id="textoPlaceholder">Ingresa el texto que deseas encriptar o desencriptar</p>
                 <p id="textoResultado"></p>
                 <button onclick="copiarTexto();">Copiar texto</button>
             </div>
-            <p>Ingrese solo letras en minúscula y sin acento</p>
-            <button onclick="cajaDeResultadosEncriptado();">Encriptar</button>
-            <button onclick="cajaDeResultadosDesencriptado();">Desencriptar</button>
         </section>
     </main>
     <footer>

@@ -1,4 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 * {
     padding: 0;
-    margin:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
+
+body {
+    background-color: #B7DAF0;
+}
+
+.header {
+    padding: 2% 5%;
+    
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.contenido__cuerpo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.Caja_texto_ingresado {
+    width: 40%;
+    margin-right: 40%;
+    color: #0A3871;
+}
+
+.Caja_texto_ingresado textarea {
+    background-color: #B7DAF0 ;
+    height: 700px;
+    width: 600px;
+    resize: none;
+    padding: 10px;
+    border: 1px none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #0A3871;
+}
+
+.botones {
+    margin-top: 10px;
+}
+
+.botones button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.caja_resultados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 18% 1%;
+    border-radius: 32px;
+    width: 60%;
+}
+
+.resultado {
+    margin-bottom: 20px;
+}
+
+.cajaDeResultados button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
