@@ -5,22 +5,22 @@ let textoDesencriptado = '';
 function cajaDeResultadosEncriptado() {
     textoIngresado = document.querySelector('#textoIngresadoEnCaja').value;
     if (textoIngresado === '') {
-        mostrarTexto();
+        mostrarImagen();
     } else {
         textoEncriptado = encriptarTexto(textoIngresado);
         mostrarTextoEncriptado(textoEncriptado);
-        mostrarImagen();
+        mostrarTexto();
     }
 }
 
 function cajaDeResultadosDesencriptado() {
     textoIngresado = document.querySelector('#textoIngresadoEnCaja').value;
     if (textoIngresado === '') {
-        mostrarTexto();
+        mostrarImagen();
     } else {
         textoDesencriptado = desencriptarTexto(textoIngresado);
         mostrarTextoDesencriptado(textoDesencriptado);
-        mostrarImagen();
+        mostrarTexto();
     }
 }
 
@@ -60,21 +60,18 @@ function copiarTexto() {
     range.selectNodeContents(textoACopiar);
     textoSeleccionado.removeAllRanges();
     textoSeleccionado.addRange(range);
-
     document.execCommand("copy");
-
-    alert("Copied the text: " + textoACopiar.textContent);
 }
 
 
-function mostrarImagen() {
+function mostrarTexto() {
     document.getElementById("imagenSinTexto").style.display = "none";
     document.getElementById("mensajeNoEncontrado").style.display = "none";
     document.getElementById("textoPlaceholder").style.display = "none";
     document.getElementById("textoResultado").style.display = "block";
 }
 
-function mostrarTexto() {
+function mostrarImagen() {
     document.getElementById("imagenSinTexto").style.display = "block";
     document.getElementById("mensajeNoEncontrado").style.display = "block";
     document.getElementById("textoPlaceholder").style.display = "block";
