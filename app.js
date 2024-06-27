@@ -52,6 +52,21 @@ function mostrarTextoDesencriptado(texto) {
     mostrarImagen();
 }
 
+function copiarTexto() {
+    let textoACopiar = document.getElementById("textoResultado");
+    let textoSeleccionado = window.getSelection();
+    let range = document.createRange();
+
+    range.selectNodeContents(textoACopiar);
+    textoSeleccionado.removeAllRanges();
+    textoSeleccionado.addRange(range);
+
+    document.execCommand("copy");
+
+    alert("Copied the text: " + textoACopiar.textContent);
+}
+
+
 function mostrarImagen() {
     document.getElementById("imagenSinTexto").style.display = "none";
     document.getElementById("mensajeNoEncontrado").style.display = "none";
