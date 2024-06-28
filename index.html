@@ -15,15 +15,21 @@
             <div class="Caja_texto_ingresado">
                 <textarea id="textoIngresadoEnCaja" placeholder="Ingrese un texto aquí"></textarea>
                 <p>Ingrese solo letras en minúscula y sin acento</p>
-                <button onclick="cajaDeResultadosEncriptado();">Encriptar</button>
-                <button onclick="cajaDeResultadosDesencriptado();">Desencriptar</button>
+                <div class="botones">
+                    <div class="boton_azul">
+                        <button class="boton_azul" onclick="cajaDeResultadosEncriptado();">Encriptar</button>
+                    </div>
+                    <div class="boton">
+                        <button class="boton" onclick="cajaDeResultadosDesencriptado();">Desencriptar</button> 
+                    </div>
+                </div>
             </div>
             <div class="caja_resultados">
                 <img src="./assets/Muñeco.png" id="imagenSinTexto">
                 <h2 id="mensajeNoEncontrado">Ningún mensaje fue encontrado</h2>
                 <p id="textoPlaceholder">Ingresa el texto que deseas encriptar o desencriptar</p>
                 <p id="textoResultado"></p>
-                <button onclick="copiarTexto();">Copiar texto</button>
+                <button class="boton_azul" onclick="copiarTexto();">Copiar texto</button>
             </div>
         </section>
     </main>
@@ -33,4 +39,3 @@
     <script src="app.js"></script>
 </body>
 </html>
-
