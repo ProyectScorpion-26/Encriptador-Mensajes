@@ -28,14 +28,15 @@ body {
 }
 
 .Caja_texto_ingresado {
-    width: 40%;
-    margin-right: 50%;
+    width: 50%;
+    margin-right: 15%;
+    margin-left: 8%;
     color: #0A3871;
 }
 
 .Caja_texto_ingresado textarea {
     background-color: #B7DAF0;
-    height: 600px;
+    height: 750px;
     width: 700px;
     resize: none;
     padding: 100px 10px;
@@ -58,7 +59,7 @@ body {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
 }
@@ -72,12 +73,11 @@ body {
     color: white;
     cursor: pointer;
     font-size: 16px;
-
+    padding: 24px 130px;
 }
 
-.boton  button{
+.boton button {
     margin-right: 10px;
-    padding: 15px 30px;
     border: 2px solid #0A3871;
     border-radius: 24px;
     background-color: transparent;
@@ -85,6 +85,26 @@ body {
     cursor: pointer;
     font-size: 16px;
     margin-right: 150px;
+    padding: 24px 130px;
+    gap: 8px;
+}
+
+.boton_copiar button{
+    margin-right: 10px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 24px;
+    background-color: transparent;
+    border: 2px solid #0A3871;
+    color: #0A3871;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 24px 130px;
+    margin-top: 705px;
+}
+
+.boton_copiar{
+    position: absolute;
 }
 
 .caja_resultados {
@@ -92,28 +112,43 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 15% 1%;
+    color: #343A40;
+    padding: 6% 1%;
     border-radius: 32px;
-    width: 60%;
+    width: 400px;
+    height: 880px;
     font-size: 24px;
 }
+    
 
-.caja_resultados button {
-    padding: 15px 30px;
-    border: none;
-    border-radius: 24px;
-    background-color: #0A3871;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.caja_resultados h2,
-.caja_resultados p {
+.titulo_inicial {
     margin: 2% 15%;
     text-align: center;
 }
 
-.resultado {
-    margin-bottom: 20px;
+.parrafo_sin_texto {
+    margin: 10% 5%;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+}
+
+.parrafo_texto{
+    margin: 1% 5%;
+    font-size: 24px;
+    color: #495057;
+    padding: 5%;
+    word-wrap: break-word;
+    width: 400px;
+    height: 880px;
+}
+
+.boton_desencriptar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#copiarBotonContainer {
+    display: none;
 }

@@ -26,10 +26,12 @@
             </div>
             <div class="caja_resultados">
                 <img src="./assets/Muñeco.png" id="imagenSinTexto">
-                <h2 id="mensajeNoEncontrado">Ningún mensaje fue encontrado</h2>
-                <p id="textoPlaceholder">Ingresa el texto que deseas encriptar o desencriptar</p>
-                <p id="textoResultado"></p>
-                <button class="boton_azul" onclick="copiarTexto();">Copiar texto</button>
+                <h2 class="titulo_inicial" id="mensajeNoEncontrado">Ningún mensaje fue encontrado</h2>
+                <p class="parrafo_sin_texto" id="textoPlaceholder">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <p class="parrafo_texto" id="textoResultado"></p>
+                <div class="boton_copiar" id="copiarBotonContainer">
+                    <button onclick="copiarTexto();">Copiar</button>
+                </div>
             </div>
         </section>
     </main>

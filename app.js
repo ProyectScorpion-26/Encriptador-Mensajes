@@ -10,6 +10,7 @@ function cajaDeResultadosEncriptado() {
         textoEncriptado = encriptarTexto(textoIngresado);
         mostrarTextoEncriptado(textoEncriptado);
         mostrarTexto();
+        mostrarBotonCopiar();
     }
 }
 
@@ -21,6 +22,7 @@ function cajaDeResultadosDesencriptado() {
         textoDesencriptado = desencriptarTexto(textoIngresado);
         mostrarTextoDesencriptado(textoDesencriptado);
         mostrarTexto();
+        mostrarBotonCopiar();
     }
 }
 
@@ -63,7 +65,6 @@ function copiarTexto() {
     document.execCommand("copy");
 }
 
-
 function mostrarTexto() {
     document.getElementById("imagenSinTexto").style.display = "none";
     document.getElementById("mensajeNoEncontrado").style.display = "none";
@@ -76,4 +77,13 @@ function mostrarImagen() {
     document.getElementById("mensajeNoEncontrado").style.display = "block";
     document.getElementById("textoPlaceholder").style.display = "block";
     document.getElementById("textoResultado").style.display = "none";
+    ocultarBotonCopiar();
+}
+
+function mostrarBotonCopiar() {
+    document.getElementById("copiarBotonContainer").style.display = "flex";
+}
+
+function ocultarBotonCopiar() {
+    document.getElementById("copiarBotonContainer").style.display = "none";
 }
